@@ -1,4 +1,4 @@
-// Define the data to be used for the chart, from TIOBE index
+// Define the data to be used for the chart
 const data = [
     { country: 'United States', population: 332 },
     { country: 'China', population: 1444 },
@@ -13,7 +13,7 @@ const data = [
   ]
   
   // Define variables for the chart dimensions and scales
-  const margin = { top: 10, right: 10, bottom: 30, left: 30 }
+  const margin = { top: 20, right: 20, bottom: 60, left: 60 }
   const width = 800 - margin.left - margin.right
   const height = 500 - margin.top - margin.bottom
   
