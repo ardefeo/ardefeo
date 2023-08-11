@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony DeFeo - Web Developer</title>
     <link rel="stylesheet" href="styles/styles.css"> <!-- Custom stylesheet in case I want to override Bootstrap -->
+    <link rel="stylesheet" href="styles/d3css.css"> <!-- Custom stylesheet for D3 -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Bootstrap CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap Icons CSS link -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.8.3/dist/d3.min.js"></script>
+    <script src="script-d3.js"></script>
+    <!-- D3 and custom JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <meta name="description" content="Personal website of Anthony DeFeo, showing off multiple linked pages for my web development stuff">
 </head>
@@ -50,6 +54,11 @@
     </nav>
 
     <section class="p-5 text-center">
+        <h2>Relative popularity of programming languages</h2>
+        <a href="https://www.tiobe.com/tiobe-index/"><h3>TIOBE index, July 2023</h3></a>
+        <div class="container">
+          <div id="chart"></div>
+        </div>
         <div class="container">
             <h2>This is an additional page and is under construction for now!</h2>
         </div>
@@ -64,5 +73,6 @@
 
 <!-- Bootstrap JS bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
