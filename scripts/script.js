@@ -1,14 +1,14 @@
-const body = document.querySelector('body');
+const bodySel = document.querySelector('body');
 const modeToggle = document.getElementById('btn-check-2-outlined');
 const modeStatus = document.querySelector('#mode-status');
-const pageStatus = document.getElementById('pageloadtime')
+const pageStatusTime = document.getElementById('pageloadtime')
 
 //function to implement dark/light mode toggle
 function toggleMode() {
     
-    body.classList.toggle('dark-mode')
+    bodySel.classList.toggle('dark-mode')
     
-    const modeMessage = body.classList.contains('dark-mode') ? 
+    const modeMessage = bodySel.classList.contains('dark-mode') ? 
     'The lights are off!' 
     : "The lights are on!";
 
@@ -25,5 +25,5 @@ window.addEventListener("load", function () {
     let time = performance.timing;
     let pageloadtime = time.loadEventStart - time.navigationStart;
     console.log(pageloadtime)
-    pageStatus.innerText += pageloadtime + ' ms'
+    pageStatusTime.innerText += pageloadtime + ' ms'
   })
